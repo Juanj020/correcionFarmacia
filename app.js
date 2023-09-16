@@ -197,13 +197,13 @@ const getNumMedicamentosProveedor = async (req, res) => {
 
 const getMedicamentosxProveedor = async (req, res) => {
     try {
-        const coleccion = basedatos.collection("Compras");
+        const coleccion = basedatos.collection("Ventas");
         const Resultado = await coleccion
             .aggregate([
                 {
                     $project: {
-                        "proveedor.nombre": 1,
-                        "medicamentosComprados.nombreMedicamento": 1,
+                        "paciente.nombre": 1,
+                        "medicamentosVendidos.nombreMedicamento": 1,
                     },
                 },
             ])
