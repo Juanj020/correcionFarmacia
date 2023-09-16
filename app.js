@@ -60,7 +60,7 @@ const getTotalVentas = async (req, res) => {
                 { $match: { nombre: "Paracetamol" } },
                 {
                     $project: {
-                        totalValue: { $multiply: ["$precio", "$stock"] },
+                        totalValue: { $multiply: ["$precio", "$stock"] },//alo
                     },
                 },
             ])
