@@ -1000,21 +1000,21 @@ const getMedicamentosStock = async (req, res) => {
 /* Rutas */
 server.get("/medicamentos", getMedicamentos); //1
 server.get("/proveedorescon", getProveedoresCon); //2
-server.get("/proveedorA", getProveedorA); //3 mal
+server.get("/proveedorA", getProveedorA); //3 
 server.get("/medicamentosfecha", getMedicamentosFecha); //4
 server.get("/totalVentas", getTotalVentas); //5
 server.get("/medicamentosVencidos", getMedicamentosVencidos); //6
 server.get("/medicamentosProveedor", getMedicamentosProveedor); //7
 server.get("/cantidadVentas", getVentaTotal); //8
-server.get("/medicamentoSinVentas", getMedicamentoSinVender); //9 - esta está mal
+server.get("/medicamentoSinVentas", getMedicamentoSinVender); //9 
 server.get("/medicamentoCaro", getMedicamentosCaro); //10
 server.get("/numMedicamentosProveedor", getNumMedicamentosProveedor); //11
 server.get("/medicamentosxProveedor", getMedicamentosxProveedor); //12
 server.get("/noVendioProveedor", getNoVendioProveedor); //13
 server.get("/medicamentosVencidosMarzo", getMedicamentosVencidosMarzo); //14
-server.get("/medicamentosMenosVendidos", getMedicamentosMenosVendidos); //15 - Sale pero raro pri
+server.get("/medicamentosMenosVendidos", getMedicamentosMenosVendidos); //15 
 server.get("/gananciaPorProveedor", getGananciaPorProveedor); //16
-server.get("/promedioVenta", getPromedioVenta); //17 - mal
+server.get("/promedioVenta", getPromedioVenta); //17 
 server.get("/ventasEmpleado", getVentasEmpleado); //18
 server.get("/medicamentosExpe", getMedicamentosExpe); //19
 server.get("/getVentasEmpleado5", getVentasEmpleado5); //20
